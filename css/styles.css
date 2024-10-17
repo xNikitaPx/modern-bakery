@@ -1,0 +1,51 @@
+:root {
+    --color-primary-dark:#31261A;
+    --color-primary-light:#FAF4EA;
+    --color-brend-light: #819B57;
+    --color-brend-dark: #465929;
+}
+/* Global */
+body{
+    color: var(--color-primary-dark);
+}
+ul {
+    list-style-type: none;
+}
+/* Ссылки */
+.link {
+    color: var(--color-primary-light);
+}
+
+.link:hover {
+    color: var(--color-brend-light);
+}
+/* Кнопка */
+.button {
+    color: var(--color-primary-light);
+    background: var(--color-brend-light);
+    border: 2px solid var(--color-brend-light);
+    border-radius: 8px;
+    cursor:pointer;
+}
+
+.button:hover {
+    color:var(--color-brend-dark);
+    background-color: transparent ;
+}
+/* Main Section */
+.main-title {
+    color: var(--color-primary-light);
+}
+
+.main-title .accent {
+    color: var(--color-brend-light);
+}
+/* Advanteges Section */
+.advanteges-list {
+    color: var(--color-primary-light);
+    background-color:var(--color-brend-light);
+}
+
+.section-title .accent {
+    color: var(--color-brend-dark);
+}
