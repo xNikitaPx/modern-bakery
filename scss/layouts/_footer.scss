@@ -1,0 +1,158 @@
+.footer {
+  position: relative;
+  background-color: var(--color-primary-dark);
+  background-image: url(../images/footer-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 32px 0;
+
+  &::before,
+  &::after {
+    position: absolute;
+    bottom: 0;
+    background-repeat: no-repeat;
+    content: "";
+  }
+
+  &::before {
+    width: 180px;
+    height: 120px;
+    left: 0;
+    background-image: url("../images/Footer-bread-small.png");
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 85px;
+      height: 205px;
+      top: 48px;
+      background-image: url("/images/Footer-bread-small-mobile.png");
+    }
+  }
+
+  &::after {
+    width: 380px;
+    height: 190px;
+    right: 0;
+    background-image: url("../images/Footer-bread-big.png");
+
+    @media screen and (max-width: $bp-tablet) {
+      width: 100px;
+      height: 90px;
+      background-image: url("/images/Footer-bread-big-mobile.png");
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 20px;
+
+    @media screen and (max-width: $bp-tablet) {
+      flex-direction: column;
+      gap: 18px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+
+    @media screen and (max-width: $bp-tablet) {
+      gap: 32px;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-basis: 50%;
+    gap: 20px;
+
+    @media screen and (max-width: $bp-tablet) {
+      gap: 8px;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    flex-grow: 1;
+  }
+
+  &__menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    @media screen and (max-width: $bp-tablet) {
+      gap: 18px;
+    }
+  }
+
+  &__menu-link {
+    @media screen and (max-width: $bp-tablet) {
+      font-size: 14px;
+    }
+  }
+
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+  }
+
+  &__address-link {
+    margin-bottom: 16px;
+    color: var(--color-primary-light);
+    font-size: 16px;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.3s;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 18px;
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: var(--color-brend-normal);
+    }
+  }
+
+  &__address-social {
+    display: flex;
+    gap: 22px;
+
+    @media screen and (max-width: $bp-tablet) {
+      justify-content: center;
+    }
+  }
+
+  &__address-icon {
+    width: 32px;
+    height: 32px;
+    fill: var(--color-primary-light);
+
+    &:hover {
+      fill: var(--color-brend-normal);
+    }
+  }
+
+  &__politic {
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 8px;
+    }
+  }
+
+  &__address-copy {
+    color: #a18268;
+    font-size: 14px;
+
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 0;
+      font-size: 12px;
+      font-weight: 400px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.format-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 444px;
+  padding: 24px;
+  background-image: linear-gradient(
+    180deg,
+    rgba(49, 38, 26, 0) 55.21%,
+    rgba(49, 38, 26, 0.71) 72.92%,
+    var(--color-primary-dark) 100%
+  );
+  border-radius: 16px;
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  &__title {
+    margin-bottom: 16px;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--color-brend-light);
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 8px;
+      font-size: 20px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--color-primary-light);
+  }
+}

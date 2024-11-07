@@ -1,0 +1,28 @@
+.formats-section {
+  &__title {
+    margin-bottom: 80px;
+    @media screen and (max-width: $bp-tablet) {
+      margin-bottom: 24px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  &__button {
+    @media screen and (max-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__container {
+    overflow: hidden;
+  }
+
+  &__list {
+    margin-bottom: 32px;
+  }
+}

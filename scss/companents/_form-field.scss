@@ -1,0 +1,39 @@
+.form-field {
+  &__label {
+    display: block;
+  }
+
+  &__input {
+    padding: 16px 42px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.2;
+    border: 1px solid var(--color-secondary-dark);
+    border-radius: 8px;
+    background-color: transparent;
+
+    @media screen and (max-width: $bp-tablet) {
+      padding: 8px 24px;
+    }
+
+    &:focus {
+      border-color: var(--color-brend-normal);
+      outline: none;
+    }
+
+    &::placeholder {
+      color: var(--color-secondary-dark);
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      line-height: 1.2;
+    }
+
+    &:focus::placeholder {
+      color: var(--color-primary-dark);
+      font-family: "poppins", serif;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  }
+}

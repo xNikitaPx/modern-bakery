@@ -1,0 +1,52 @@
+.main-section {
+  padding: 272px 0;
+  background-image: linear-gradient(
+      102.76deg,
+      rgba(18, 18, 17, 0.78) 2.03%,
+      rgba(18, 18, 17, 0.6) 58.46%,
+      rgba(18, 18, 17, 0) 90.36%
+    ),
+    url(../images/main-section-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding: 124px 0;
+  }
+
+  @media screen and (main-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: linear-gradient(
+        102.76deg,
+        rgba(18, 18, 17, 0.78) 2.03%,
+        rgba(18, 18, 17, 0.6) 58.46%,
+        rgba(18, 18, 17, 0) 90.36%
+      ),
+      url(../images/main-section-background@x2.jpg);
+  }
+
+  &__title {
+    margin-bottom: 0;
+    color: var(--color-primary-light);
+    text-align: center;
+    font-size: 128px;
+    font-weight: 900;
+
+    @media screen and (max-width: $bp-desktop) {
+      margin-bottom: 48px;
+      font-size: 63px;
+      line-height: 1;
+    }
+  }
+
+  &__button {
+    display: none;
+
+    @media screen and (max-width: $bp-desktop) {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
