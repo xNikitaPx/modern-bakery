@@ -25,7 +25,7 @@
       width: 85px;
       height: 205px;
       top: 48px;
-      background-image: url("/images/Footer-bread-small-mobile.png");
+      background-image: url("../images/Footer-bread-small-mobile.png");
     }
   }
 
@@ -38,7 +38,7 @@
     @media screen and (max-width: $bp-tablet) {
       width: 100px;
       height: 90px;
-      background-image: url("/images/Footer-bread-big-mobile.png");
+      background-image: url("../images/Footer-bread-big-mobile.png");
     }
   }
 
