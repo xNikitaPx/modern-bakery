@@ -36,6 +36,8 @@
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
+        width: 85px;
+        height: 205px;
         background-image: url("../images/Footer-bread-small-mobile2x.png");
       }
     }
@@ -61,6 +63,8 @@
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
+        width: 100px;
+        height: 90px;
         background-image: url("../images/Footer-bread-big-mobile2x.png");
       }
     }
