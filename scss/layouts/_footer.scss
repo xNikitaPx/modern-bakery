@@ -38,13 +38,17 @@
         (min-resolution: 2dppx) {
         width: 85px;
         height: 205px;
-        background-image: url("../images/Footer-bread-small-mobile2x.png");
+        top: 48px;
+        background-image: url("../images/Footer-bread-small-mobile@2x.png");
       }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
+      width: 180px;
+      height: 120px;
+      left: 0;
       background-image: url("../images/Footer-bread-small@2x.png");
     }
   }
@@ -65,13 +69,16 @@
         (min-resolution: 2dppx) {
         width: 100px;
         height: 90px;
-        background-image: url("../images/Footer-bread-big-mobile2x.png");
+        background-image: url("../images/Footer-bread-big-mobile@2x.png");
       }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
+      width: 380px;
+      height: 190px;
+      right: 0;
       background-image: url("../images/Footer-bread-big@2x.png");
     }
   }
