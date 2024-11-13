@@ -55,26 +55,26 @@
     width: 380px;
     height: 190px;
     right: 0;
-    background-image: url("../images/Footer-bread-big.png");
+    background-image: url(../images/Footer-bread-big.png);
+    background-size: cover;
 
     @media screen and (max-width: $bp-tablet) {
       width: 100px;
       height: 90px;
-      background-image: url("../images/Footer-bread-big-mobile.png");
+      background-image: url(../images/Footer-bread-big-mobile.png);
+      background-size: cover;
 
       @media screen and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: url("../images/Footer-bread-big-mobile@2x.png");
+        background-image: url(../images/Footer-bread-big-mobile@2x.png);
       }
     }
 
     @media screen and (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      width: 380px;
-      height: 190px;
-      background-image: url("../images/Footer-bread-big@2x.png");
+      background-image: url(../images/Footer-bread-big@2x.png);
     }
   }
 
