@@ -7,6 +7,12 @@
   background-position: center;
   padding: 32px 0;
 
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/footer-background@2x.png);
+  }
+
   &::before,
   &::after {
     position: absolute;
@@ -33,6 +39,12 @@
         background-image: url("../images/Footer-bread-small-mobile2x.png");
       }
     }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/Footer-bread-small@2x.png");
+    }
   }
 
   &::after {
@@ -51,6 +63,12 @@
         (min-resolution: 2dppx) {
         background-image: url("../images/Footer-bread-big-mobile2x.png");
       }
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/Footer-bread-big@2x.png");
     }
   }
 
