@@ -26,6 +26,12 @@
       height: 205px;
       top: 48px;
       background-image: url("../images/Footer-bread-small-mobile.png");
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../images/Footer-bread-small-mobile2x.png");
+      }
     }
   }
 
@@ -39,6 +45,12 @@
       width: 100px;
       height: 90px;
       background-image: url("../images/Footer-bread-big-mobile.png");
+
+      @media screen and (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url("../images/Footer-bread-big-mobile2x.png");
+      }
     }
   }
 

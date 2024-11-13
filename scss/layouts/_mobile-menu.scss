@@ -18,6 +18,12 @@
     height: 240px;
     background-image: url(../images/mobile-menu-bread.png);
     content: "";
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/mobile-menu-bread@2x.png);
+    }
   }
 
   &.is-open {
